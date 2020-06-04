@@ -10,6 +10,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- including created css styles to webpage-->
+    <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -21,7 +23,7 @@
         <div class = 'container'>
             <!-- container class allows you to restrict the content inside with by 
                 container width-->
-            <div class = 'row'>
+            <div class = 'row row-header'>
                 <div class='col-12 col-sm-6'>
                     <!-- So the content in this div will occupy the entire row for extra 
                         small screen sizes, and occupy half the row(6 columns) for small to extra large 
@@ -44,7 +46,7 @@
     </header>
 
     <div class = "container">
-        <div class="row">
+        <div class="row row-content align-items-center">
             <div class = 'col-12 col-sm-4 order-sm-last col-md-3'>
                 <!--for extra small screen sizes, this will occupy the entire row, 
                     for small, it will occupy four columns, 
@@ -72,7 +74,7 @@
         </div>
 
 
-        <div class = "row">
+        <div class = "row row-content align-items-center">
             <div class = 'col-12 col-sm-4 col-md-3'>
                 <h3>This Month's Promotions</h3>
             </div>
@@ -82,7 +84,7 @@
             </div>
         </div>
 
-        <div class = "row">
+        <div class = "row row-content align-items-center">
             <div class = 'col-12 col-sm-4 order-sm-last col-md-3'>
                 <h3>Meet our Culinary Specialists</h3>
             </div>
@@ -94,7 +96,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer class='footer'>
         <div class = 'container'>
             <div class='row'>             
                 <div class='col-4 offset-1 col-sm-2'>
@@ -104,7 +106,7 @@
                         this will be applied to extra small all the way up to the 
                         extra large screen sizes-->
                     <h5>Links</h5>
-                    <ul>
+                    <ul class= 'list-unstyled'> <!--this class removes the bullets infront of the links below-->
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
@@ -122,12 +124,12 @@
 		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
-                <div class='col-12 col-sm-4'>
+                <div class='col-12 col-sm-4 align-self-center'>
                     <!--So col-12 col-sm-4, meaning that this will occupy 
                         a separate set of 12 columns stacked below the previous 
                         content for extra small screen sizes, but for small to 
                         extra large it will occupy four columns-->
-                    <div>
+                    <div class='text-center'>
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
                         <a href="http://www.linkedin.com/in/">LinkedIn</a>
@@ -137,7 +139,7 @@
                     </div>
                 </div>
            </div>
-           <div class = 'row'>             
+           <div class = 'row justify-content-center'>             
                 <div class='col-auto'>
                     <!-- this content will occupy just enough columns 
                         as is required by the content there.-->
