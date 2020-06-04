@@ -4,6 +4,7 @@
 <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
+    <!--makes our website responsive using below line of code-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
@@ -14,46 +15,78 @@
 
 <body>
 
-    <header>
-        <div>
-            <div>
-                <div>
+    <header class="jumbotron">
+        <!--jumbotron class allows you to set apart the content in the jumbotron 
+            with the rest of the page-->
+        <div class = 'container'>
+            <!-- container class allows you to restrict the content inside with by 
+                container width-->
+            <div class = 'row'>
+                <div class='col-12 col-sm-6'>
+                    <!-- So the content in this div will occupy the entire row for extra 
+                        small screen sizes, and occupy half the row(6 columns) for small to extra large 
+                        screen sizes-->
                     <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                    <p>We take inspiration from the World's best cuisines, 
+                        and create a unique fusion experience. Our lipsmacking creations 
+                        will tickle your culinary senses!</p>
                 </div>
-                <div>
+                <div class='col-12 col-sm'>
+                    <!-- by specifying col-12 we are explicitly saying that whatever content 
+                    is  inside this div will be stacked below the content about here. 
+                    And then for small to extra large screen sizes, this content will occupy 
+                    the leftover amount of columns in the row for small to extra large screen sizes. 
+                    So here in this case since six columns are occupied by this content, 
+                    this will get the remaining six columns there.-->
                 </div>
             </div>
         </div>
     </header>
 
-    <div>
-        <div>
-            <div>
+    <div class = "container">
+        <div class="row">
+            <div class = 'col-12 col-sm-4 order-sm-last col-md-3'>
+                <!--for extra small screen sizes, this will occupy the entire row, 
+                    for small, it will occupy four columns, 
+                    and then for medium to extra large, it will occupy three columns in the row.
+                    the remaining part will be occupied by the content down below -->
+
+                <!-- order-sm-last
+                    So which means that when this content is displayed,
+                    this content will be pulled to the right side of the screen and the below content
+                    to the left side-->
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div>
+            <div class='col col-sm order-sm-first col-md'>
+                <!--the classes as col, indicating that this will be stacked below 
+                    the content here in the extra small screen sizes, 
+                    and then I'll say column sm, so which means that this will occupy
+                    the remaining eight columns here, because four columns is 
+                    taken up by above one, and then we'll say column md, so which 
+                    means that this will occupy the remaining nine columns 
+                    because three columns are taken up for medium to extra large screen sizes 
+                    by the content above -->
                 <h2>Uthappizza</h2>
                 <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
             </div>
         </div>
 
 
-        <div>
-            <div>
+        <div class = "row">
+            <div class = 'col-12 col-sm-4 col-md-3'>
                 <h3>This Month's Promotions</h3>
             </div>
-            <div>
+            <div class='col col-sm col-md'>
                 <h2>Weekend Grand Buffet</h2>
                 <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
             </div>
         </div>
 
-        <div>
-            <div>
+        <div class = "row">
+            <div class = 'col-12 col-sm-4 order-sm-last col-md-3'>
                 <h3>Meet our Culinary Specialists</h3>
             </div>
-            <div>
+            <div class='col col-sm order-sm-first col-md'>
                 <h2>Alberto Somayya</h2>
                 <h4>Executive Chef</h4>
                 <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
@@ -62,9 +95,14 @@
     </div>
 
     <footer>
-        <div>
-            <div>             
-                <div>
+        <div class = 'container'>
+            <div class='row'>             
+                <div class='col-4 offset-1 col-sm-2'>
+                    <!--offset-1
+                        So which means that this content on this div will be 
+                        pushed right by one column. Similarly since I said offset one,
+                        this will be applied to extra small all the way up to the 
+                        extra large screen sizes-->
                     <h5>Links</h5>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -73,7 +111,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class='col-7 col-sm-5'>
                     <h5>Our Address</h5>
                     <address>
 		              121, Clear Water Bay Road<br>
@@ -84,7 +122,11 @@
 		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
-                <div>
+                <div class='col-12 col-sm-4'>
+                    <!--So col-12 col-sm-4, meaning that this will occupy 
+                        a separate set of 12 columns stacked below the previous 
+                        content for extra small screen sizes, but for small to 
+                        extra large it will occupy four columns-->
                     <div>
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
@@ -95,8 +137,10 @@
                     </div>
                 </div>
            </div>
-           <div>             
-                <div>
+           <div class = 'row'>             
+                <div class='col-auto'>
+                    <!-- this content will occupy just enough columns 
+                        as is required by the content there.-->
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
            </div>
