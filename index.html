@@ -16,7 +16,36 @@
 </head>
 
 <body>
-
+    <nav class='navbar navbar-dark navbar-expand-sm fixed-top'> 
+    <!-- navbar allows us to create a navigation bar-->
+    <!-- navbar-expand-sm : allows navigation bar to collapse in small and extra small screen sizes-->
+    <!-- various other fixing navbars : fixed-bottom, static-top, just not use this class and
+        navbar scrolls along with the  webpage when you scroll it top or bottom-->
+        <div class='container'>
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#Navbar'>
+                <!-- for showing and hiding links of navigation in extra small screens-->
+                <!-- data-toggle='collapse' :javascript component in bootstrap-->
+                <!-- we are defining another div with ID as navbar-->
+                <span class='navbar-toggler-icon'></span>
+            </button>
+            <a class='navbar-brand' href='#'> <!-- allows to display the information
+                 as a branding info in nav bar-->
+                Ristorante Con Fusion
+            </a>
+            <div class='collapse navbar-collapse' id='Navbar'>
+                <ul class='navbar-nav mr-auto'>
+                    <!--  navbar-nav: helps to display the set of links in navbar-->
+                    <!-- mr-auto ; utility calss; allows us to push content as left as possible-->
+                    <li class='nav-item active'><a class='nav-link' href='#'>Home</a></li> 
+                    <!--active class allows us to highlight the text-->
+                    <li class='nav-item'><a class='nav-link' href='./aboutus.html'>About</a></li>
+                    <li class='nav-item'><a class='nav-link' href='#'>Menu</a></li>
+                    <li class='nav-item'><a class='nav-link' href='#'>Contact</a></li>
+                </ul>
+            </div>
+                
+        </div>
+    </nav>
     <header class="jumbotron">
         <!--jumbotron class allows you to set apart the content in the jumbotron 
             with the rest of the page-->
@@ -108,7 +137,7 @@
                     <h5>Links</h5>
                     <ul class= 'list-unstyled'> <!--this class removes the bullets infront of the links below-->
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>

@@ -12,7 +12,36 @@
 </head>
 
 <body>
-
+    <nav class='navbar navbar-dark navbar-expand-sm fixed-top'> 
+        <!-- navbar allows us to create a navigation bar-->
+        <!-- navbar-expand-sm : allows navigation bar to collapse in small and extra small screen sizes-->
+        <!-- various other fixing navbars : fixed-bottom, static-top, just not use this class and
+            navbar scrolls along with the  webpage when you scroll it top or bottom-->
+            <div class='container'>
+                <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#Navbar'>
+                    <!-- for showing and hiding links of navigation in extra small screens-->
+                    <!-- data-toggle='collapse' :javascript component in bootstrap-->
+                    <!-- we are defining another div with ID as navbar-->
+                    <span class='navbar-toggler-icon'></span>
+                </button>
+                <a class='navbar-brand' href='./index.html'> <!-- allows to display the information
+                     as a branding info in nav bar-->
+                    Ristorante Con Fusion
+                </a>
+                <div class='collapse navbar-collapse' id='Navbar'>
+                    <ul class='navbar-nav mr-auto' href='./index.html'>
+                        <!--  navbar-nav: helps to display the set of links in navbar-->
+                        <!-- mr-auto ; utility calss; allows us to push content as left as possible-->
+                        <li class='nav-item'><a class='nav-link' href='./index.html'>Home</a></li> 
+                        <!--active class allows us to highlight the text-->
+                        <li class='nav-item active'><a class='nav-link' href='./aboutus.html'>About</a></li>
+                        <li class='nav-item'><a class='nav-link' href='#'>Menu</a></li>
+                        <li class='nav-item'><a class='nav-link' href='#'>Contact</a></li>
+                    </ul>
+                </div>
+                    
+            </div>
+        </nav>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -28,6 +57,12 @@
 
     <div class='container'>
         <div class='row'>
+            <!-- breadcrumb-->
+            <ol class='col-12 breadcrumb'> 
+                <!--instead of ol, a simple div will also work fine here-->
+                <li class='breadcrumb-item'><a href="./index.html">Home</a></li>
+                <li class='breadcrumb-item active'> About Us</li>
+            </ol>
             <div class='col-12 col-sm'>
                <h3>About Us</h3>
                <hr>
