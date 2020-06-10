@@ -32,7 +32,7 @@
             </button>
             <a class='navbar-brand' href='#'> <!-- allows to display the information
                  as a branding info in nav bar-->
-                Ristorante Con Fusion
+                 <img src='img/logo.png' height="30" width="41">
             </a>
             <div class='collapse navbar-collapse' id='Navbar'>
                 <ul class='navbar-nav mr-auto'>
@@ -56,7 +56,7 @@
             <!-- container class allows you to restrict the content inside with by 
                 container width-->
             <div class = 'row row-header'>
-                <div class='col-12 col-sm-6'>
+                <div class='col-12 col-sm-9'>
                     <!-- So the content in this div will occupy the entire row for extra 
                         small screen sizes, and occupy half the row(6 columns) for small to extra large 
                         screen sizes-->
@@ -65,13 +65,14 @@
                         and create a unique fusion experience. Our lipsmacking creations 
                         will tickle your culinary senses!</p>
                 </div>
-                <div class='col-12 col-sm'>
+                <div class='col-12 col-sm align-self-center'>
                     <!-- by specifying col-12 we are explicitly saying that whatever content 
                     is  inside this div will be stacked below the content about here. 
                     And then for small to extra large screen sizes, this content will occupy 
                     the leftover amount of columns in the row for small to extra large screen sizes. 
                     So here in this case since six columns are occupied by this content, 
                     this will get the remaining six columns there.-->
+                    <img src='img/logo.png' class="img-fluid">
                 </div>
             </div>
         </div>
@@ -100,8 +101,13 @@
                     means that this will occupy the remaining nine columns 
                     because three columns are taken up for medium to extra large screen sizes 
                     by the content above -->
-                <h2>Uthappizza</h2>
-                <p class='d-none d-sm-block'>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthappizza">
+                        <div class="media-body">
+                            <h2 class="mt-0">Uthappizza</h2><!-- mt-0 --margin top 0 -->
+                            <p class='d-none d-sm-block'>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                        </div>
+                    </div>                
             </div>
         </div>
 
@@ -121,9 +127,15 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class='col col-sm order-sm-first col-md'>
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p class='d-none d-sm-block'>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                    src='img/alberto.png' alt="alberto">
+                    <div class="media-body">
+                        <h2>Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class='d-none d-sm-block'>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>                
             </div>
         </div>
     </div>
