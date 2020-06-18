@@ -11,5 +11,18 @@ $(document).ready(function(){
             $("#carouselButton").children("span").removeClass('fa-play');
             $("#carouselButton").children("span").addClass('fa-pause');                    
         }
+    });   
+
+    $("#login").click(function(){
+        $("#loginModal").modal("show");
     });
-});            
+    $("#reserveButton").click(function(){
+        $("#reserveguests").modal("show");
+    });
+}); 
+
+
+
+
+
+
