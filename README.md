@@ -9,4 +9,4 @@ b) Create a responsive web page design, and <br>
 c) Make use of web tools to setup and manage web sites.
 
 <i>Note:</i> For those who are trying to take a good look at the web page I have created as a part of the course, download the entire repository to your PC and access files from there.<br>
-For open up of web page, <i>index.html</i> is your go to page and open in a browser, preferably <strong>Google Chrome</strong>.
+<i>index.html</i> is your go to page and open in a browser, preferably <strong>Google Chrome</strong>.
